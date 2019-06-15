@@ -1,1 +1,21 @@
-header.header {}
+.header__main {
+  background-image: url('../images/general/main-photo.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 500px;
+  width: 100%;
+
+  &-wrap {
+    padding: 65px 60px;
+
+    .header__title {
+      max-width: 670px;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .header__anons {
+      color: white;
+    }
+  }
+}

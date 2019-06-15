@@ -10,7 +10,133 @@
 @media (max-width: 992px) {}
 
 // ≥768px
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .header__main {
+    background-size: contain;
+    height: auto;
+
+    &-wrap {
+      padding: 24px 16px 0;
+
+      .header__title {
+        font-size: 28px;
+        line-height: 32px;
+        max-width: 80%;
+      }
+
+      .header__anons {
+        color: $black;
+      }
+    }
+  }
+
+  .label {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 2px 9px 2px 9px;
+  }
+
+  section.brevet_list {
+    padding: 0;
+
+    &.margin-top {
+      margin-top: -30px;
+    }
+
+    .brevet__item {
+      background-color: $navyBlue;
+      background-size: contain;
+      padding: 23px 17px 40px;
+
+      &--header {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+
+        .brevet__item--headline {
+          font-size: 18px;
+          line-height: 21px;
+          letter-spacing: 0.225px;
+        }
+
+        .label {
+          right: -25px;
+          top: -35px;
+        }
+      }
+
+      &--body {
+        display: block;
+
+        .brevet__item--title {
+          font-size: 28px;
+          line-height: 32px;
+          border-bottom: 0;
+        }
+
+        .brevet__info {
+          align-items: flex-start;
+          border-top: 1px solid #D8D8D8;
+          flex-direction: column;
+
+          &--date,
+          &--distance,
+          &--time {
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            padding-top: 15px;
+
+            &::after {
+              top: 20px;
+            }
+
+            span {
+              display: inline-block;
+              font-size: 14px;
+              margin-right: 7px;
+            }
+          }
+        }
+      }
+
+      &--footer {
+        a.more__green {
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  footer.footer {
+    padding: 16px 20px;
+    line-height: 20px;
+
+    .row {
+      flex-direction: column;
+
+      .footer-copyrite,
+      .footer-email,
+      .footer-credit {
+        flex-basis: 100%;
+      }
+
+      .footer-copyrite,
+      .footer-email {
+        margin-bottom: 10px;
+      }
+
+      .footer-credit {
+        border-top: 0.5px solid rgba(216, 216, 216, 0.904);
+        padding-top: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
 
 // ≥576px
 @media (max-width: 576px) {}
