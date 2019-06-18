@@ -117,4 +117,13 @@ section.brevet_list {
       }
     }
   }
+  .brevet__more{
+    border: 0;
+    cursor: pointer;
+    height: 60px;
+    max-width: 715px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 100%;
+  }
 }

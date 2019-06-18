@@ -11,6 +11,18 @@
 
 // ≥768px
 @media (max-width: 768px) {
+
+  .col__left,
+  .col__right {
+    flex-basis: 100%;
+  }
+
+  .bg_white,
+  .bg_gray {
+    width: 100%;
+    padding: 19px 0;
+  }
+
   .header__main {
     background-size: contain;
     height: auto;
@@ -34,6 +46,54 @@
     font-size: 12px;
     line-height: 22px;
     padding: 2px 9px 2px 9px;
+  }
+
+  .info_img {
+    width: 100%;
+  }
+
+  .block {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .block_medal {
+    .item_wrap {
+      flex-wrap: wrap;
+
+      .col {
+        flex-basis: 100%;
+
+        img {
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  section.preparing_first {
+    h3 {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  section.interest_video {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+
+      h3 {
+        font-size: 24px;
+        line-height: 26px;
+      }
+
+      .video iframe {
+        height: 170px;
+      }
+    }
   }
 
   section.brevet_list {

@@ -6,71 +6,72 @@ block variables
 
 block content
   .container
-    .col_left
-      .nav__wrap
-        h1 fdfd
+    .col__left
+      include modules/navigation/left_menu
 
     .col__right
 
-      section.header__main
-        .header__main-wrap
-          h1.header__title Сообщество рандонёров Беларуси
-          h3.header__anons Аннонс бреветов
+    section.header__content(style="background-image: url(assets/images/content/main_photo.png); background-repeat: no-repeat; background-size: auto;")
+      .header__content-wrap
+        h1.header__title Сообщество рандонёров Беларуси
+        h3.header__anons Аннонс бреветов
 
-      section.brevet_list.margin-top
-        .wrapper
-          .brevet__item(style="background-image: url(../assets/images/content/brevet__item_1.jpg)")
-            .brevet__item--header
-              .brevet__item--headline Марафон АСР (Б200)
-              .label Через неделю 
-            .brevet__item--body
-              .brevet__item--title «Лидская петля»
-              .brevet__info
-                .brevet__info--date
-                  span Дата старта
-                  | 16.03.19
-                .brevet__info--distance
-                  span Расстояние
-                  | 200 км
-                .brevet__info--time
-                  span Время
-                  | 20 часов
-            .brevet__item--footer
-              a.more__green(href="") Узнать подробнее
-          .brevet__item(style="background-image: url(../assets/images/content/brevet__item_2.png)")
-            .brevet__item--header
-              .brevet__item--headline Бревет от велоклуба "Верста" 
-            .brevet__item--body
-              .brevet__item--title «К озеру с островом» 
-              .brevet__info
-                .brevet__info--date
-                  span Дата старта
-                  | 18.04.19
-                .brevet__info--distance
-                  span Расстояние
-                  | 300 км
-                .brevet__info--time
-                  span Время
-                  | 32 часов
-            .brevet__item--footer
-              a.more__green(href="") Узнать подробнее
-          .brevet__item(style="background-image: url(../assets/images/content/brevet__item_3.png)")
-            .brevet__item--header
-              .brevet__item--headline Велосипедный тур
-            .brevet__item--body
-              .brevet__item--title «Минск - Париж - Минск» 
-              .brevet__info
-                .brevet__info--date
-                  span Дата старта
-                  | 03.07.19
-                .brevet__info--distance
-                  span Расстояние
-                  | 400 км
-                .brevet__info--time
-                  span Время
-                  | 38 часов
-            .brevet__item--footer
-              a.more__green(href="") Узнать подробнее
+    section.brevet_list.margin-top
+      .wrapper
+        .brevet__item(style="background-image: url(assets/images/content/brevet__item_1.jpg);")
+          .brevet__item--header
+            .brevet__item--headline Марафон АСР (Б200)
+            .label Через неделю 
+          .brevet__item--body
+            .brevet__item--title «Лидская петля»
+            .brevet__info
+              .brevet__info--date
+                span Дата старта
+                | 16.03.19
+              .brevet__info--distance
+                span Расстояние
+                | 200 км
+              .brevet__info--time
+                span Время
+                | 20 часов
+          .brevet__item--footer
+            a.more__green(href="") Узнать подробнее
+        .brevet__item(style="background-image: url(assets/images/content/brevet__item_2.png);")
+          .brevet__item--header
+            .brevet__item--headline Бревет от велоклуба "Верста" 
+          .brevet__item--body
+            .brevet__item--title «К озеру с островом» 
+            .brevet__info
+              .brevet__info--date
+                span Дата старта
+                | 18.04.19
+              .brevet__info--distance
+                span Расстояние
+                | 300 км
+              .brevet__info--time
+                span Время
+                | 32 часов
+          .brevet__item--footer
+            a.more__green(href="") Узнать подробнее
+        .brevet__item(style="background-image: url(assets/images/content/brevet__item_3.png);")
+          .brevet__item--header
+            .brevet__item--headline Велосипедный тур
+          .brevet__item--body
+            .brevet__item--title «Минск - Париж - Минск» 
+            .brevet__info
+              .brevet__info--date
+                span Дата старта
+                | 03.07.19
+              .brevet__info--distance
+                span Расстояние
+                | 400 км
+              .brevet__info--time
+                span Время
+                | 38 часов
+          .brevet__item--footer
+            a.more__green(href="") Узнать подробнее
+        button.brevet__more.more Показать больше 
+        p.info_more Посмотреть информацию о прошедших заездах и узнать результаты можно в 
+          a(href="") Архиве.
 
-
-      
+    
