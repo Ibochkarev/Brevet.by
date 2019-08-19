@@ -23,6 +23,10 @@
     padding: 19px 0;
   }
 
+  .wrapper-menu {
+    display: block;
+  }
+
   .header__main {
     background-size: contain;
     height: auto;
@@ -208,7 +212,11 @@
 @media (min-width: 576px) {}
 
 // ≤768px
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .wrapper-menu {
+    display: none;
+  }
+}
 
 // ≤992px
 @media (min-width: 992px) {}

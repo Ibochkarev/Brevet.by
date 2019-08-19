@@ -29,77 +29,97 @@
       </header>
       <div class="content">
         <div class="container">
-          <div class="col__left">
-            <nav>
+          <div class="row">
+            <div class="col__left">
               <div class="wrapper">
-                <label for="menuToggle">Меню</label>
-                <input id="menuToggle" type="checkbox">
-                <ul class="menu clearfix">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
+                <div class="wrapper-logo"><img class="img-responsive" src="assets/images/general/logo.svg" alt=""><span>Сообщество рандонёров Беларуси</span></div>
+                <div class="wrapper-menu">
+                  <label for="menuToggle">Меню</label>
+                  <input id="menuToggle" type="checkbox">
+                </div>
+                <nav class="animated bounceInDown" role="navigation">
+                  <ul>
+                    <li class="sub-menu"><a href="#">Все бреветы
+                        <div class="fa fa-caret-down right"></div></a>
+                      <ul>
+                        <li><a class="active" href="#">Лидская петля</a></li>
+                        <li><a href="#">Лидская петля</a></li>
+                        <li><a href="#">Лидская петля</a></li>
+                        <li><a href="#">Лидская петля</a></li>
+                        <li><a href="#">Лидская петля</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#">О нас
+                        <div class="fa fa-caret-down right"></div></a>
+                      <ul>
+                        <li><a href="#">Пункт 1</a></li>
+                        <li><a href="#">Пункт 2</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Новичкам</a></li>
+                  </ul>
+                </nav>
               </div>
-            </nav>
+            </div>
+            <div class="col__right">
+              <section class="header__content" style="background-image: url(assets/images/content/main_photo.png); background-repeat: no-repeat; background-size: auto;">
+                <div class="header__content-wrap">
+                  <h1 class="header__title">Сообщество рандонёров Беларуси</h1>
+                  <h3 class="header__anons">Аннонс бреветов</h3>
+                </div>
+              </section>
+              <section class="brevet_list margin-top">
+                <div class="wrapper">
+                  <div class="brevet__item" style="background-image: url(assets/images/content/brevet__item_1.jpg);">
+                    <div class="brevet__item--header">
+                      <div class="brevet__item--headline">Марафон АСР (Б200)</div>
+                      <div class="label">Через неделю </div>
+                    </div>
+                    <div class="brevet__item--body">
+                      <div class="brevet__item--title">«Лидская петля»</div>
+                      <div class="brevet__info">
+                        <div class="brevet__info--date"><span>Дата старта</span>16.03.19</div>
+                        <div class="brevet__info--distance"><span>Расстояние</span>200 км</div>
+                        <div class="brevet__info--time"><span>Время</span>20 часов</div>
+                      </div>
+                    </div>
+                    <div class="brevet__item--footer"><a class="more__green" href="">Узнать подробнее</a></div>
+                  </div>
+                  <div class="brevet__item" style="background-image: url(assets/images/content/brevet__item_2.png);">
+                    <div class="brevet__item--header">
+                      <div class="brevet__item--headline">Бревет от велоклуба "Верста" </div>
+                    </div>
+                    <div class="brevet__item--body">
+                      <div class="brevet__item--title">«К озеру с островом» </div>
+                      <div class="brevet__info">
+                        <div class="brevet__info--date"><span>Дата старта</span>18.04.19</div>
+                        <div class="brevet__info--distance"><span>Расстояние</span>300 км</div>
+                        <div class="brevet__info--time"><span>Время</span>32 часов</div>
+                      </div>
+                    </div>
+                    <div class="brevet__item--footer"><a class="more__green" href="">Узнать подробнее</a></div>
+                  </div>
+                  <div class="brevet__item" style="background-image: url(assets/images/content/brevet__item_3.png);">
+                    <div class="brevet__item--header">
+                      <div class="brevet__item--headline">Велосипедный тур</div>
+                    </div>
+                    <div class="brevet__item--body">
+                      <div class="brevet__item--title">«Минск - Париж - Минск» </div>
+                      <div class="brevet__info">
+                        <div class="brevet__info--date"><span>Дата старта</span>03.07.19</div>
+                        <div class="brevet__info--distance"><span>Расстояние</span>400 км</div>
+                        <div class="brevet__info--time"><span>Время</span>38 часов</div>
+                      </div>
+                    </div>
+                    <div class="brevet__item--footer"><a class="more__green" href="">Узнать подробнее</a></div>
+                  </div>
+                  <button class="brevet__more more">Показать больше </button>
+                  <p class="info_more">Посмотреть информацию о прошедших заездах и узнать результаты можно в <a href="">Архиве.</a></p>
+                </div>
+              </section>
+            </div>
           </div>
-          <div class="col__right"></div>
-          <section class="header__content" style="background-image: url(assets/images/content/main_photo.png); background-repeat: no-repeat; background-size: auto;">
-            <div class="header__content-wrap">
-              <h1 class="header__title">Сообщество рандонёров Беларуси</h1>
-              <h3 class="header__anons">Аннонс бреветов</h3>
-            </div>
-          </section>
-          <section class="brevet_list margin-top">
-            <div class="wrapper">
-              <div class="brevet__item" style="background-image: url(assets/images/content/brevet__item_1.jpg);">
-                <div class="brevet__item--header">
-                  <div class="brevet__item--headline">Марафон АСР (Б200)</div>
-                  <div class="label">Через неделю </div>
-                </div>
-                <div class="brevet__item--body">
-                  <div class="brevet__item--title">«Лидская петля»</div>
-                  <div class="brevet__info">
-                    <div class="brevet__info--date"><span>Дата старта</span>16.03.19</div>
-                    <div class="brevet__info--distance"><span>Расстояние</span>200 км</div>
-                    <div class="brevet__info--time"><span>Время</span>20 часов</div>
-                  </div>
-                </div>
-                <div class="brevet__item--footer"><a class="more__green" href="">Узнать подробнее</a></div>
-              </div>
-              <div class="brevet__item" style="background-image: url(assets/images/content/brevet__item_2.png);">
-                <div class="brevet__item--header">
-                  <div class="brevet__item--headline">Бревет от велоклуба "Верста" </div>
-                </div>
-                <div class="brevet__item--body">
-                  <div class="brevet__item--title">«К озеру с островом» </div>
-                  <div class="brevet__info">
-                    <div class="brevet__info--date"><span>Дата старта</span>18.04.19</div>
-                    <div class="brevet__info--distance"><span>Расстояние</span>300 км</div>
-                    <div class="brevet__info--time"><span>Время</span>32 часов</div>
-                  </div>
-                </div>
-                <div class="brevet__item--footer"><a class="more__green" href="">Узнать подробнее</a></div>
-              </div>
-              <div class="brevet__item" style="background-image: url(assets/images/content/brevet__item_3.png);">
-                <div class="brevet__item--header">
-                  <div class="brevet__item--headline">Велосипедный тур</div>
-                </div>
-                <div class="brevet__item--body">
-                  <div class="brevet__item--title">«Минск - Париж - Минск» </div>
-                  <div class="brevet__info">
-                    <div class="brevet__info--date"><span>Дата старта</span>03.07.19</div>
-                    <div class="brevet__info--distance"><span>Расстояние</span>400 км</div>
-                    <div class="brevet__info--time"><span>Время</span>38 часов</div>
-                  </div>
-                </div>
-                <div class="brevet__item--footer"><a class="more__green" href="">Узнать подробнее</a></div>
-              </div>
-              <button class="brevet__more more">Показать больше </button>
-              <p class="info_more">Посмотреть информацию о прошедших заездах и узнать результаты можно в <a href="">Архиве.</a></p>
-            </div>
-          </section>
         </div>
       </div>
       <footer class="footer">
@@ -117,6 +137,9 @@
           </div>
         </div>
       </footer>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/libs.min.js"></script>
+      <script src="assets/js/main.js"></script>
     </div>
   </body>
 </html>

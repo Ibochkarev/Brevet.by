@@ -1,16 +1,39 @@
-nav
-  .wrapper
+.wrapper
+  .wrapper-logo
+    img.img-responsive(src="assets/images/general/logo.svg", alt="")
+    span Сообщество рандонёров Беларуси
+
+  .wrapper-menu
     label(for='menuToggle') Меню
     input#menuToggle(type='checkbox')
 
-    ul.menu.clearfix
+  nav.animated.bounceInDown(role="navigation")
+    ul
+      li.sub-menu
+        a(href='#')
+          | Все бреветы
+          .fa.fa-caret-down.right
+        ul
+          li
+            a.active(href='#') Лидская петля
+          li
+            a(href='#') Лидская петля
+          li
+            a(href='#') Лидская петля
+          li
+            a(href='#') Лидская петля
+          li
+            a(href='#') Лидская петля
+      li.sub-menu
+        a(href='#')
+          | О нас
+          .fa.fa-caret-down.right
+        ul
+          li
+            a(href='#') Пункт 1
+          li
+            a(href='#') Пункт 2
       li
-        a(href='#') 1
+        a(href='#') Партнерам
       li
-        a(href='#') 2
-      li
-        a(href='#') 3
-      li
-        a(href='#') 4
-      li
-        a(href='#') 5
+        a(href='#') Новичкам
